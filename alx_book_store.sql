@@ -2,19 +2,19 @@ CREATE DATABASE IF NOT EXISTS alx_book_store;
 
 
 CREATE TABLE Authors(
-    id INT UNSIGNED AUTO_INCREMENT,
+    author_id INT UNSIGNED AUTO_INCREMENT,
     author_name VARCHAR(215),
-    PRIMARY KEY (id)
+    PRIMARY KEY (author_id)
 );
 
 
 CREATE TABLE Books(
-    `id` INT UNSIGNED AUTO_INCREMENT,
+    `books_id` INT UNSIGNED AUTO_INCREMENT,
     `title` VARCHAR(130),
     `author_id` INT UNSIGNED,
     `price` DOUBLE,
     `publication_date` DATE,
-    PRIMARY KEY (`id`),
+    PRIMARY KEY (`books_id`),
     FOREIGN KEY (`author_id`) REFERENCES `authors`(`id`)
 );
 
