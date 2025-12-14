@@ -1,14 +1,14 @@
-CREATE DATABASE IF NOT EXISTS `alx_book_store`;
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 
 
-CREATE TABLE `authors`(
-    `id` INT UNSIGNED AUTO_INCREMENT,
-    `author_name` VARCHAR(215),
-    PRIMARY KEY (`id`)
+CREATE TABLE Authors(
+    id INT UNSIGNED AUTO_INCREMENT,
+    author_name VARCHAR(215),
+    PRIMARY KEY (id)
 );
 
 
-CREATE TABLE `books`(
+CREATE TABLE Books(
     `id` INT UNSIGNED AUTO_INCREMENT,
     `title` VARCHAR(130),
     `author_id` INT UNSIGNED,
