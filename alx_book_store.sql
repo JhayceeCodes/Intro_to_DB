@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS `alx_book_store`;
+
+
 CREATE TABLE `authors`(
     `id` INT UNSIGNED AUTO_INCREMENT,
     `author_name` VARCHAR(215),
