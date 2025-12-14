@@ -37,7 +37,7 @@ CREATE TABLE Orders(
 CREATE TABLE Order_Details(
     orderdetailid INT UNSIGNED AUTO_INCREMENT,
     order_id INT UNSIGNED,
-    book_id  INT UNSIGNED,
+    book_id  INT,
     quantity DOUBLE,
     PRIMARY KEY (orderdetailid),
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
