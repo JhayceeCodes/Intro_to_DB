@@ -34,7 +34,7 @@ CREATE TABLE Orders(
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
-CREATE TABLE Order_Detail(
+CREATE TABLE Order_Details(
     orderdetailid INT UNSIGNED AUTO_INCREMENT,
     order_id INT UNSIGNED,
     book_id  INT UNSIGNED,
